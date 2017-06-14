@@ -10,7 +10,7 @@ namespace HelloWorld
             InitializeComponent();
 
             ClickMeButton.Click += 
-                (object sender, RoutedEventArgs e) =>
+                (sender, e) =>
                 {
                     MessageBox.Show("Hello world!");
                 };
