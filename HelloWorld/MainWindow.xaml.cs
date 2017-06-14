@@ -9,12 +9,11 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            ClickMeButton.Click += ClickMeButton_Click;
-        }
-
-        private void ClickMeButton_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Hello world!");
+            ClickMeButton.Click += 
+                delegate(object sender, RoutedEventArgs e)
+                {
+                    MessageBox.Show("Hello world!");
+                };
         }
     }
 }
