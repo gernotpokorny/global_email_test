@@ -10,10 +10,7 @@ namespace HelloWorld
             InitializeComponent();
 
             ClickMeButton.Click += 
-                (s, e) =>
-                {
-                    MessageBox.Show("Hello world!");
-                };
+                (s, e) => MessageBox.Show("Hello world!");
         }
     }
 }
